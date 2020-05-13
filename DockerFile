@@ -1,0 +1,7 @@
+FROM python:alpine
+LABEL maintainer="Anton Mokhovikov"
+COPY . .
+RUN pip install flask
+EXPOSE 8000
+ENTRYPOINT ["python"]
+CMD ["service.py"]
